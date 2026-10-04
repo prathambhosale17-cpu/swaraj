@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>स्वराज्य • Swarajya Community Welfare & Safety Platform</title>
+    <meta name="description" content="Chhatrapati Shivaji Maharaj Inspired Citizen Welfare, Safety SOS, Blood Connect & Rural Innovations Platform">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet.js CSS & JS for Live SOS Radar Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- QRCode.js for Digital ID Verification -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- html2pdf.js for Client-Side PDF ID Card Download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Firebase SDK (v9/v10 Compat for Web Authentication) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+    <!-- Modular CSS Stylesheet -->
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen">
+
+    <!-- Global Application Root -->
+    <div id="app"></div>
+
+    <!-- Global Floating Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none max-w-sm w-full"></div>
+
+    <!-- Global Modal Anchor -->
+    <div id="modal-container"></div>
+
+    <!-- ======================================================= -->
+    <!-- TOPIC-WISE MODULAR JAVASCRIPT ARCHITECTURE -->
+    <!-- ======================================================= -->
+    <script src="./public/js/config.js"></script>
+    <script src="./public/js/firebase-auth.js"></script>
+    <script src="./public/js/api.js"></script>
+    <script src="./public/js/modules/auth.js"></script>
+    <script src="./public/js/modules/safety.js"></script>
+    <script src="./public/js/modules/health.js"></script>
+    <script src="./public/js/modules/agriculture.js"></script>
+    <script src="./public/js/modules/issues.js"></script>
+    <script src="./public/js/modules/profile.js"></script>
+    <script src="./public/js/modules/admin.js"></script>
+    <script src="./public/js/app.js"></script>
+
+</body>
+
+</html>
